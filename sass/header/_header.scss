@@ -124,3 +124,32 @@
 .logo-web {
   color: $primary-color;
 }
+// ==================
+
+.menu{
+	@media screen and (min-width:480px) {
+display: none;
+}
+
+@media screen and (min-width:768px) {
+display: flex;
+}
+
+@media screen and (min-width:1200px) {
+
+}
+}
+
+.connect{
+	@media screen and (min-width:480px) {
+display: none;
+}
+
+@media screen and (min-width:768px) {
+display:block;
+}
+
+@media screen and (min-width:1200px) {
+
+}
+}

@@ -287,11 +287,28 @@ body {
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 h1,
@@ -377,7 +394,6 @@ img {
   padding-bottom: 94px;
 }
 
-.merits-list,
 .business-direction,
 .team-list,
 .clients-list,
@@ -546,6 +562,30 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 480px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .connect {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connect {
+    display: block;
+  }
+}
+
 .slogan {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -557,45 +597,8 @@ img {
   background-size: cover;
 }
 
-@media screen and (min-width: 480px) {
-  .slogan {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-mobile-480@1x.jpg");
-  }
-}
-
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
-  .slogan {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-mobile-480@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .slogan {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-tablet-768@1x.jpg");
-  }
-}
-
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .slogan {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-tablet-768@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .slogan {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-desktop-1200@1x.jpg");
-  }
-}
-
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .slogan {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-desktop-1200@2x.jpg");
-  }
-}
-
 .main-title {
   font-weight: 900;
-  font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -604,6 +607,18 @@ img {
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .main-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .main-title {
+    font-size: 44px;
+  }
 }
 
 .slogan-button {
@@ -641,11 +656,22 @@ img {
   margin-bottom: 10px;
 }
 
+@media screen and (min-width: 480px) {
+  .merits-list__trait {
+    text-align: center;
+  }
+}
+
 .merits-list__info {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
-  max-width: 270px;
+}
+
+@media screen and (min-width: 1200px) {
+  .merits-list__info {
+    max-width: 270px;
+  }
 }
 
 /*TODO icons-svg merits section*/
@@ -653,21 +679,36 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 270px;
   height: 120px;
   background-color: #f5f4fa;
   margin-bottom: 30px;
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .merits-list__icon-thumb {
+    width: 270px;
+  }
+}
+
 .merits-list__icon {
   height: 70px;
 }
 
-/*TODO icons-svg merits section end*/
-/* merits section end */
+@media screen and (min-width: 480px) {
+  .merits-list > .merits-list__item {
+    margin-left: 0;
+  }
+}
+
 .business {
   padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .business {
+    display: none;
+  }
 }
 
 .business__title,
@@ -818,6 +859,12 @@ img {
   font-weight: 300;
 }
 
+@media screen and (min-width: 480px) {
+  .team-list {
+    display: block;
+  }
+}
+
 .clients-title {
   font-weight: 700;
   font-size: 36px;
@@ -877,6 +924,12 @@ img {
 .tagline-icon {
   width: 88.48px;
   height: 45.44px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list > .clients-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
 }
 
 .filter-button {
@@ -1236,9 +1289,14 @@ img {
 
 /* icon in modal end */
 .wrap-footer {
-  display: flex;
   align-items: baseline;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 1200px) {
+  .wrap-footer {
+    display: flex;
+  }
 }
 
 .footer {
@@ -1249,6 +1307,12 @@ img {
 
 .footer-list {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-list {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-list__item {
@@ -1263,9 +1327,11 @@ img {
   color: #fff;
 }
 
-.footer-form {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-form__input {
@@ -1281,9 +1347,6 @@ img {
 }
 
 .footer-form__submit {
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   padding: 10px 28px 10px 28px;
   font-weight: 700;
@@ -1300,6 +1363,21 @@ img {
 .footer-form__submit:hover, .footer-form__submit:focus {
   color: #fff;
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-form__submit {
+    display: inline-flex;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__submit {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .footer-form__social-icon {
@@ -1354,8 +1432,10 @@ img {
   margin-bottom: 20px;
 }
 
-.social-footer {
-  justify-content: flex-start;
+@media screen and (min-width: 1200px) {
+  .social-footer {
+    justify-content: flex-start;
+  }
 }
 
 .fi-social {
@@ -1367,4 +1447,15 @@ img {
 }
 
 /* ================================ */
+@media screen and (min-width: 480px) {
+  .footer-container {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .footer-form-wrap {
+    margin-top: 60px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

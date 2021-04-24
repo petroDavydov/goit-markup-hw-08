@@ -1,5 +1,9 @@
 .business {
   padding-top: 0;
+
+  @media screen and(max-width:768px) {
+    display: none;
+  }
 }
 
 .business__title,
