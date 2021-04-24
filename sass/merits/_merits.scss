@@ -1,0 +1,36 @@
+/*?MERITS */
+
+.merits-list__trait {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.merits-list__info {
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: $paragraph-color;
+  max-width: 270px;
+}
+
+/*TODO icons-svg merits section*/
+
+.merits-list__icon-thumb {
+	@include center();
+  width: 270px;
+  height: 120px; 
+  background-color: $icon-merits-color;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.merits-list__icon {
+  height: 70px;
+}
+
+/*TODO icons-svg merits section end*/
+
+/* merits section end */

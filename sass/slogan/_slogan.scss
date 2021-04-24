@@ -1,0 +1,52 @@
+.slogan {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-color: $header-background-color;
+  text-align: center;
+  background-image: linear-gradient($header-overlay, $header-overlay),
+    url(../images/workin-day.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+//   max-width: 1600px;
+
+}
+
+.main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $light;
+  text-align: center;
+  max-width: 696px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.slogan-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px $box-shadow;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $btn-color;
+    background-color: $hover-color;
+  }
+  &:active {
+    background-color: $color-active;
+    color: $btn-color;
+  }
+}
