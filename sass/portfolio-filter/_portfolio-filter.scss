@@ -1,11 +1,31 @@
 .filter-button {
   margin-bottom: 46px;
-  @include center();
 
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include center();
+  }
 }
 
 .filter-button__item:not(:last-child) {
   margin-right: 8px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .filter-button__btn-portfolio {

@@ -586,6 +586,48 @@ img {
   }
 }
 
+.menu-button {
+  display: inline-block;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+
+.menu-button.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: khaki;
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+.header {
+  position: relative;
+}
+
 .slogan {
   padding-top: 200px;
   padding-bottom: 200px;
@@ -934,13 +976,31 @@ img {
 
 .filter-button {
   margin-bottom: 46px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .filter-button {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .filter-button__item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (min-width: 480px) {
+  .filter-button__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .filter-button__btn-portfolio {
@@ -1038,6 +1098,12 @@ img {
 
 /* overlay end */
 /* portfolio-list end */
+@media screen and (min-width: 480px) {
+  .portfolio-list {
+    display: block;
+  }
+}
+
 /* Modal window & animate*/
 .backdrop-slogan {
   position: fixed;
