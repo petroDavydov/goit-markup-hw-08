@@ -586,6 +586,12 @@ img {
   }
 }
 
+.navigation-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .menu-button {
   display: inline-block;
   align-items: center;
@@ -593,6 +599,12 @@ img {
   margin: 0;
   border: none;
   background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -700,7 +712,6 @@ img {
 
 .menu-button {
   padding: 20px;
-  margin-left: 230px;
 }
 
 .menu-button:hover,

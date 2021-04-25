@@ -154,6 +154,12 @@
 
 // ==============================================================================================================================================================
 
+.navigation-menu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .menu-button {
   display: inline-block;
   align-items: center;
@@ -161,6 +167,10 @@
   margin: 0;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .menu-button .icon-cross {
@@ -239,7 +249,6 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: $color-link;
-
     margin-bottom: 60px;
   }
 }
@@ -275,7 +284,6 @@
 
 .menu-button {
   padding: 20px;
-  margin-left: 230px;
 }
 
 .menu-button:hover,
