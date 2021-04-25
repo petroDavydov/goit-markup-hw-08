@@ -1,16 +1,16 @@
 .filter-button {
-  margin-bottom: 46px;
-
   @media screen and (min-width: 480px) {
     display: flex;
     flex-wrap: wrap;
   }
 
   @media screen and (min-width: 768px) {
+    justify-content: center;
   }
 
   @media screen and (min-width: 1200px) {
     @include center();
+    margin-bottom: 46px;
   }
 }
 
@@ -25,6 +25,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
