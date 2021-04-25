@@ -36,12 +36,23 @@
 
 .team-list > .team-list__member {
   @include count(4);
+  @media screen and (min-width: 768px) {
+    @include count(2);
+  }
 }
 
 /*! clients retical*/
 
 .clients-list > .clients-list__item {
   @include count(6);
+  
+  @media screen and (min-width: 480px) {
+    @include count(2);
+  }
+
+  @media screen and (min-width: 768px) {
+    @include count(3);
+  }
 }
 
 /*! reticle portfolio*/
