@@ -1546,6 +1546,14 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .wrap-footer__detail {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1578,6 +1586,18 @@ img {
   .footer-form {
     display: flex;
     align-items: baseline;
+  }
+}
+
+.footer-form__lable {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__lable {
+    display: flex;
+    justify-content: center;
   }
 }
 
