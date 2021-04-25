@@ -414,13 +414,15 @@ img {
 }
 
 /*!retical common functions*/
-.merits-list > .merits-list__item {
-  flex-basis: calc(100% / 4 - 30px);
-}
-
 @media screen and (min-width: 768px) {
   .merits-list > .merits-list__item {
     flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .merits-list > .merits-list__item {
+    flex-basis: calc(100% / 4 - 30px);
   }
 }
 
@@ -430,21 +432,19 @@ img {
 }
 
 /*! reticle team*/
-.team-list > .team-list__member {
-  flex-basis: calc(100% / 4 - 30px);
-}
-
 @media screen and (min-width: 768px) {
   .team-list > .team-list__member {
     flex-basis: calc(100% / 2 - 30px);
   }
 }
 
-/*! clients retical*/
-.clients-list > .clients-list__item {
-  flex-basis: calc(100% / 6 - 30px);
+@media screen and (min-width: 1200px) {
+  .team-list > .team-list__member {
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 
+/*! clients retical*/
 @media screen and (min-width: 480px) {
   .clients-list > .clients-list__item {
     flex-basis: calc(100% / 2 - 30px);
@@ -454,6 +454,12 @@ img {
 @media screen and (min-width: 768px) {
   .clients-list > .clients-list__item {
     flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list > .clients-list__item {
+    flex-basis: calc(100% / 6 - 30px);
   }
 }
 
@@ -469,6 +475,14 @@ img {
 .main-navigation {
   display: flex;
   align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .navigation {
@@ -579,6 +593,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .connect__item + .connect__item {
+    margin-left: 50px;
+  }
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -632,10 +652,27 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: flex;
+  }
+}
+
 .navigation-menu {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+  .navigation-menu {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navigation-menu {
+    width: auto;
+  }
 }
 
 .menu-button {
@@ -819,7 +856,6 @@ img {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
 }
@@ -834,6 +870,7 @@ img {
 @media screen and (min-width: 1200px) {
   .main-title {
     font-size: 44px;
+    max-width: 696px;
   }
 }
 
@@ -885,6 +922,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .merits-list__trait {
+    text-align: start;
+  }
+}
+
 .merits-list__info {
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -928,7 +971,7 @@ img {
   padding-top: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .business {
     display: none;
   }
@@ -1551,6 +1594,7 @@ img {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
+    width: 100%;
   }
 }
 
@@ -1580,6 +1624,12 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
   color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-title {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1723,6 +1773,12 @@ img {
 @media screen and (min-width: 480px) {
   .footer-form-wrap {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-wrap {
+    margin-top: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

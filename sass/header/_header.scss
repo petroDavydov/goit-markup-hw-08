@@ -5,6 +5,12 @@
 .main-navigation {
   display: flex;
   align-items: center;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
 }
 
 .navigation {
@@ -86,6 +92,9 @@
     padding-bottom: 0;
     padding-top: 10px;
   }
+
+  @media screen and (min-width: 1200px) {
+  }
 }
 
 .envelope-icon {
@@ -115,6 +124,10 @@
     margin-left: 50px;
     @media screen and (min-width: 768px) {
       margin-left: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 50px;
     }
   }
 }
@@ -166,6 +179,7 @@
   }
 
   @media screen and (min-width: 1200px) {
+    display: flex;
   }
 }
 
@@ -173,8 +187,19 @@
 
 .navigation-menu {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+
+  @media screen and (min-width: 480px) {
+	width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+   
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
 }
 
 .menu-button {
