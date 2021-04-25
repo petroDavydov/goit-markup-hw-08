@@ -14,12 +14,16 @@
 .portfolio-list > .portfolio-list__point {
   @extend %reticle-mar-t-l;
 }
-/*!retical common functions end*/
+//retical common functions end
 
-/*! reticle merits*/
+//reticle merits
 
 .merits-list > .merits-list__item {
   @include count(4);
+
+  @media screen and (min-width: 768px) {
+    @include count(2);
+  }
 }
 
 /*! reticle business*/

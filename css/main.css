@@ -414,10 +414,14 @@ img {
 }
 
 /*!retical common functions*/
-/*!retical common functions end*/
-/*! reticle merits*/
 .merits-list > .merits-list__item {
   flex-basis: calc(100% / 4 - 30px);
+}
+
+@media screen and (min-width: 768px) {
+  .merits-list > .merits-list__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
 }
 
 /*! reticle business*/
@@ -520,6 +524,13 @@ img {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .connect__link {
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
+}
+
 .envelope-icon {
   width: 16px;
   height: 12px;
@@ -544,6 +555,12 @@ img {
   margin-left: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .connect__item + .connect__item {
+    margin-left: 0;
+  }
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -556,6 +573,13 @@ img {
 
 .logo:hover, .logo:focus {
   color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    font-size: 24px;
+    padding-top: 25px;
+  }
 }
 
 .logo-web {
@@ -571,6 +595,9 @@ img {
 @media screen and (min-width: 768px) {
   .menu {
     display: flex;
+    margin-right: 84px;
+    margin-left: 88px;
+    margin-bottom: 0;
   }
 }
 
@@ -583,6 +610,7 @@ img {
 @media screen and (min-width: 768px) {
   .connect {
     display: block;
+    margin-left: 0;
   }
 }
 
@@ -730,6 +758,42 @@ img {
   background-size: cover;
 }
 
+@media screen and (min-width: 480px) {
+  .slogan {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-mobile-480@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .slogan {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-mobile-480@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .slogan {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-tablet-768@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .slogan {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-tablet-768@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slogan {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-desktop-1200@1x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .slogan {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/img-desktop-1200@2x.jpg");
+  }
+}
+
 .main-title {
   font-weight: 900;
   line-height: 1.36;
@@ -744,11 +808,12 @@ img {
 
 @media screen and (min-width: 480px) {
   .main-title {
-    font-size: 28px;
+    font-size: 26px;
+    max-width: 420px;
   }
 }
 
-@media screen and (min-width: 768px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .main-title {
     font-size: 44px;
   }
@@ -779,7 +844,14 @@ img {
   color: #fff;
 }
 
-/*?MERITS */
+@media screen and (min-width: 768px) {
+  .merits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
 .merits-list__trait {
   font-size: 14px;
   font-weight: bold;

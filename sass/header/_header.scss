@@ -81,6 +81,11 @@
     fill: $primary-color;
     color: $primary-color;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 0;
+    padding-top: 10px;
+  }
 }
 
 .envelope-icon {
@@ -108,6 +113,9 @@
 .connect__item {
   & + .connect__item {
     margin-left: 50px;
+    @media screen and (min-width: 768px) {
+      margin-left: 0;
+    }
   }
 }
 
@@ -118,6 +126,11 @@
   &:hover,
   &:focus {
     color: inherit;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    padding-top: 25px;
   }
 }
 
@@ -133,6 +146,9 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-right: 84px;
+    margin-left: 88px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -146,6 +162,7 @@
 
   @media screen and (min-width: 768px) {
     display: block;
+    margin-left: 0;
   }
 
   @media screen and (min-width: 1200px) {

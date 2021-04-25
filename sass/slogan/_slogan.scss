@@ -10,57 +10,56 @@
   background-size: cover;
 }
 // ==============================
-// @media screen and (min-width: $mobile) {
-//   .slogan {
-//     background-image: linear-gradient($header-overlay, $header-overlay),
-//       url("/images/img-mobile-480@1x.jpg");
+@media screen and (min-width: $mobile) {
+  .slogan {
+    background-image: linear-gradient($header-overlay, $header-overlay),
+      url("/images/img-mobile-480@1x.jpg");
+  }
 
-//   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .slogan {
+      background-image: linear-gradient($header-overlay, $header-overlay),
+        url("/images/img-mobile-480@2x.jpg");
+    }
+  }
+}
 
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .slogan {
-//       background-image: linear-gradient($header-overlay, $header-overlay),
-//         url("/images/img-mobile-480@2x.jpg");
-//     }
-//   }
-// }
+@media screen and (min-width: $tablet) {
+  .slogan {
+    background-image: linear-gradient($header-overlay, $header-overlay),
+      url("/images/img-tablet-768@1x.jpg");
+  }
 
-// @media screen and (min-width: $tablet) {
-//   .slogan {
-//     background-image: linear-gradient($header-overlay, $header-overlay),
-//       url("/images/img-tablet-768@1x.jpg");
-//   }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .slogan {
+      background-image: linear-gradient($header-overlay, $header-overlay),
+        url("/images/img-tablet-768@2x.jpg");
+    }
+  }
+}
 
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .slogan {
-//       background-image: linear-gradient($header-overlay, $header-overlay),
-//         url("/images/img-tablet-768@2x.jpg");
-//     }
-//   }
-// }
+@media screen and (min-width: $desktop) {
+  .slogan {
+    background-image: linear-gradient($header-overlay, $header-overlay),
+      url("/images/img-desktop-1200@1x.jpg");
+  }
 
-// @media screen and (min-width: $desktop) {
-//   .slogan {
-//     background-image: linear-gradient($header-overlay, $header-overlay),
-//       url("/images/img-desktop-1200@1x.jpg");
-//   }
-
-//   @media (min-device-pixel-ratio: 2),
-//     (-webkit-min-device-pixel-ratio: 2),
-//     (min-resolution: 192dpi),
-//     (min-resolution: 2dppx) {
-//     .slogan {
-//       background-image: linear-gradient($header-overlay, $header-overlay),
-//         url("/images/img-desktop-1200@2x.jpg");
-//     }
-//   }
-// }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .slogan {
+      background-image: linear-gradient($header-overlay, $header-overlay),
+        url("/images/img-desktop-1200@2x.jpg");
+    }
+  }
+}
 
 // ======================================
 
@@ -77,13 +76,15 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 480px) {
-    font-size: 28px;
+    font-size: 26px;
+    max-width: 420px;
   }
 
   @media screen and (min-width: 768px) {
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
   }
 }
 
