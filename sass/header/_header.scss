@@ -9,7 +9,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -118,9 +118,9 @@
 
 .connect__item {
   & + .connect__item {
-    margin-left: 50px;
+    // margin-left: 50px;
     @media screen and (min-width: 768px) {
-      margin-left: 0;
+      margin-left: 0px;
     }
 
     @media screen and (min-width: 1200px) {

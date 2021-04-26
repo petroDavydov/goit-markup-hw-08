@@ -482,7 +482,7 @@ img {
   .main-navigation {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
@@ -584,13 +584,9 @@ img {
   margin-left: auto;
 }
 
-.connect__item + .connect__item {
-  margin-left: 50px;
-}
-
 @media screen and (min-width: 768px) {
   .connect__item + .connect__item {
-    margin-left: 0;
+    margin-left: 0px;
   }
 }
 
@@ -906,6 +902,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-right: -30px;
   }
 }
 
