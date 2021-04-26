@@ -656,13 +656,9 @@ img {
   }
 }
 
-.navigation-menu {
-  display: flex;
-  justify-content: space-between;
-}
-
 @media screen and (min-width: 480px) {
   .navigation-menu {
+    justify-content: space-between;
     width: 100%;
   }
 }
