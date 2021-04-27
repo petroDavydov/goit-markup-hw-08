@@ -464,7 +464,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio-list > .portfolio-list__point {
-    margin-left: 0;
     margin-right: 30px;
   }
 }
@@ -1351,6 +1350,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    margin-right: -30px;
+  }
+}
+
 /* Modal window & animate*/
 .backdrop-slogan {
   position: fixed;
@@ -1771,7 +1776,7 @@ img {
 
 /* ================ */
 .ratical-part {
-  margin-left: 130px;
+  margin-left: 70px;
 }
 
 .retical-social-title {
