@@ -19,6 +19,8 @@
   }
 
   @media screen and (min-width: 1200px) {
+	  display: flex;
+	  justify-content: flex-start;
   }
 }
 
@@ -171,6 +173,10 @@
 
 /* ================ */
 
+.ratical-part{
+	margin-left: 130px;
+}
+
 .retical-social-title {
   font-size: 14px;
   line-height: 1.14;
@@ -178,11 +184,13 @@
   text-transform: uppercase;
   color: $secondary-title-color;
   margin-bottom: 20px;
+ 
 }
 
 .social-footer {
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
+	
   }
 }
 

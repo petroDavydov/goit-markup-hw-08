@@ -13,7 +13,7 @@
 @media screen and (min-width: $mobile) {
   .slogan {
     background-image: linear-gradient($header-overlay, $header-overlay),
-      url("/images/img-mobile-480@1x.jpg");
+      url("../images/img-mobile-480@1x.jpg");
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -22,7 +22,7 @@
     (min-resolution: 2dppx) {
     .slogan {
       background-image: linear-gradient($header-overlay, $header-overlay),
-        url("/images/img-mobile-480@2x.jpg");
+        url("../images/img-mobile-480@2x.jpg");
     }
   }
 }
@@ -30,7 +30,7 @@
 @media screen and (min-width: $tablet) {
   .slogan {
     background-image: linear-gradient($header-overlay, $header-overlay),
-      url("/images/img-tablet-768@1x.jpg");
+      url("../images/img-tablet-768@1x.jpg");
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -39,7 +39,7 @@
     (min-resolution: 2dppx) {
     .slogan {
       background-image: linear-gradient($header-overlay, $header-overlay),
-        url("/images/img-tablet-768@2x.jpg");
+        url("../images/img-tablet-768@2x.jpg");
     }
   }
 }
@@ -47,7 +47,7 @@
 @media screen and (min-width: $desktop) {
   .slogan {
     background-image: linear-gradient($header-overlay, $header-overlay),
-      url("/images/img-desktop-1200@1x.jpg");
+      url("../images/img-desktop-1200@1x.jpg");
   }
 
   @media (min-device-pixel-ratio: 2),
@@ -56,7 +56,7 @@
     (min-resolution: 2dppx) {
     .slogan {
       background-image: linear-gradient($header-overlay, $header-overlay),
-        url("/images/img-desktop-1200@2x.jpg");
+        url("../images/img-desktop-1200@2x.jpg");
     }
   }
 }

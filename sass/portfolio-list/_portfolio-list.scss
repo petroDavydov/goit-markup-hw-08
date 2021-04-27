@@ -83,12 +83,14 @@
 .portfolio-list {
   @media screen and (min-width: 480px) {
     display: block;
+	margin-left: -30px;
   }
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  	margin-right: -30px;
+	
   }
 
   @media screen and (min-width: 1200px) {
