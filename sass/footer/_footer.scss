@@ -19,8 +19,8 @@
   }
 
   @media screen and (min-width: 1200px) {
-	  display: flex;
-	  justify-content: flex-start;
+    display: flex;
+    justify-content: flex-start;
   }
 }
 
@@ -173,8 +173,10 @@
 
 /* ================ */
 
-.ratical-part{
-	margin-left: 70px;
+.ratical-part {
+  @media screen and (min-width: 768px) {
+    margin-left: 70px;
+  }
 }
 
 .retical-social-title {
@@ -184,13 +186,11 @@
   text-transform: uppercase;
   color: $secondary-title-color;
   margin-bottom: 20px;
- 
 }
 
 .social-footer {
   @media screen and (min-width: 1200px) {
     justify-content: flex-start;
-	
   }
 }
 

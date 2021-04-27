@@ -67,9 +67,11 @@
   @include count(3);
 
   @media screen and (min-width: 768px) {    
-   	margin-right: 30px;
+   	// margin-right: 30px;
+	   @include count(2);
   }
 
   @media screen and (min-width: 1200px) {
+	  margin-right: 0;
   }
 }

@@ -464,7 +464,13 @@ img {
 
 @media screen and (min-width: 768px) {
   .portfolio-list > .portfolio-list__point {
-    margin-right: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-list > .portfolio-list__point {
+    margin-right: 0;
   }
 }
 
@@ -1352,7 +1358,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .portfolio-list {
-    margin-right: -30px;
+    margin-right: 0px;
+    margin-left: -30px;
   }
 }
 
@@ -1775,8 +1782,10 @@ img {
 }
 
 /* ================ */
-.ratical-part {
-  margin-left: 70px;
+@media screen and (min-width: 768px) {
+  .ratical-part {
+    margin-left: 70px;
+  }
 }
 
 .retical-social-title {
