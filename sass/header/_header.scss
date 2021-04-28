@@ -157,6 +157,13 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
     margin-right: 84px;
     margin-left: 88px;
     margin-bottom: 0;
@@ -199,7 +206,10 @@
   border: none;
   background-color: transparent;
   z-index: 4;
-
+  
+@media screen and (min-width:480px) {
+	
+}
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -207,11 +217,13 @@
 
 .menu-button .icon-cross {
   display: none;
+ 
 }
 
 .menu-button.is-open .icon-cross {
   display: block;
-  position: fixed;
+  
+  
 }
 
 .menu-button.is-open .icon-menu {
