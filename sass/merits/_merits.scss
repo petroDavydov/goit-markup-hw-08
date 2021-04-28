@@ -1,9 +1,16 @@
+.section.merits {
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .merits-list {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-	margin-right: -30px;
+    margin-right: -30px;
   }
 }
 
@@ -70,11 +77,4 @@
   .merits-list > .merits-list__item {
     margin-left: 0;
   }
-}
-
-.section.merits{
-	@media screen and (min-width: 768px) {
-	padding-top: 60px;
-	padding-bottom: 60px;
-}
 }

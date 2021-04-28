@@ -920,6 +920,13 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .section.merits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .merits-list {
     display: flex;
     flex-wrap: wrap;
@@ -985,13 +992,6 @@ img {
 @media screen and (min-width: 480px) {
   .merits-list > .merits-list__item {
     margin-left: 0;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section.merits {
-    padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
