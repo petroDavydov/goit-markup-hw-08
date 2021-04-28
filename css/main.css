@@ -1652,6 +1652,12 @@ img {
   background: #2f303a;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer {
+    padding-bottom: 0px;
+  }
+}
+
 .footer-list {
   margin-top: 20px;
 }
