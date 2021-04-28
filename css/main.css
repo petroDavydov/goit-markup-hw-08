@@ -697,6 +697,7 @@ img {
 
 .menu-button.is-open .icon-cross {
   display: block;
+  position: fixed;
 }
 
 .menu-button.is-open .icon-menu {
@@ -705,8 +706,9 @@ img {
 
 .menu-container {
   display: none;
+  height: 100vh;
   z-index: 3;
-  position: absolute;
+  position: fixed;
   top: 100%;
   left: 0;
   width: 100%;
@@ -716,6 +718,11 @@ img {
   font-size: 20px;
   left: 0;
   top: 0;
+}
+
+.menu-container__wrapper {
+  position: absolute;
+  bottom: 0;
 }
 
 .menu-container.is-open {
