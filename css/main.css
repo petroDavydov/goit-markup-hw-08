@@ -462,14 +462,14 @@ img {
   .portfolio-list > .portfolio-list__point {
     margin-top: 30px;
     margin-right: -10px;
-    flex-basis: calc((100% - 2 * 30px) / 2);
+    flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-list > .portfolio-list__point {
-    flex-basis: calc((100% - 3 * 30px) / 3);
+    flex-basis: calc(100% / 3 - 30px);
     margin-left: -10px;
     margin-right: 20px;
   }

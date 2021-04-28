@@ -69,15 +69,15 @@
   @media screen and (min-width: 768px) {
 	margin-top: 30px;
 	margin-right: -10px;
-	// @include count(2);
-	flex-basis: calc((100% - 2 * 30px) / 2);
+	@include count(2);
+	// flex-basis: calc((100% - 2 * 30px) / 2);
 	margin-left: 30px;
 	
   }
 
   @media screen and (min-width: 1200px) {
-    // @include count(3);
-	flex-basis: calc((100% - 3 * 30px) / 3);
+    @include count(3);
+	// flex-basis: calc((100% - 3 * 30px) / 3);
 	margin-left: -10px;
 	margin-right: 20px;
   }
