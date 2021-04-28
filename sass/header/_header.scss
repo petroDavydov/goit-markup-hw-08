@@ -206,10 +206,9 @@
   border: none;
   background-color: transparent;
   z-index: 4;
-  
-@media screen and (min-width:480px) {
-	
-}
+
+  @media screen and (min-width: 480px) {
+  }
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -217,13 +216,10 @@
 
 .menu-button .icon-cross {
   display: none;
- 
 }
 
 .menu-button.is-open .icon-cross {
   display: block;
-  
-  
 }
 
 .menu-button.is-open .icon-menu {
@@ -246,12 +242,11 @@
   font-size: 20px;
   left: 0;
   top: 0;
- 
 }
 
-.menu-container__wrapper{
-	position: absolute;
-	bottom: 0;
+.menu-container__wrapper {
+  position: absolute;
+  bottom: 0;
 }
 
 .menu-container.is-open {
@@ -307,7 +302,6 @@
     margin-bottom: 60px;
   }
 }
-
 
 .menu-social {
   display: flex;
