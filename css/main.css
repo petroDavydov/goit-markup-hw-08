@@ -1065,6 +1065,13 @@ img {
     letter-spacing: 0.03em;
     margin-bottom: 30px;
     text-align: center;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team-title {
+    padding-bottom: 0;
   }
 }
 
