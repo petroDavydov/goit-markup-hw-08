@@ -1824,6 +1824,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    text-align: start;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .footer-form-wrap {
     margin-top: 60px;
