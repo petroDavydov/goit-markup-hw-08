@@ -749,10 +749,6 @@ img {
   color: #2196f3;
 }
 
-.menu-container__list {
-  height: 100vh;
-}
-
 .menu-container__connect-link {
   display: flex;
   padding-bottom: 0;
