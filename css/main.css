@@ -458,6 +458,12 @@ img {
   }
 }
 
+@media screen and (min-width: 480px) {
+  .portfolio-list > .portfolio-list__point {
+    margin-left: 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .portfolio-list > .portfolio-list__point {
     margin-top: 30px;
@@ -1735,7 +1741,6 @@ img {
 }
 
 .footer-form__input {
-  width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: rgba(255, 255, 255, 0.6);
   background-color: #2f303a;
@@ -1744,6 +1749,18 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   margin-right: 12px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer-form__input {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form__input {
+    width: 358px;
+  }
 }
 
 .footer-form__submit {

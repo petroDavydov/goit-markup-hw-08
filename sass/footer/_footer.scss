@@ -91,7 +91,7 @@
 }
 
 .footer-form__input {
-  width: 358px;
+
   border: 1px solid $footer-form-bg-color;
   color: $footer-form-color;
   background-color: $background-slogan;
@@ -100,6 +100,13 @@
   line-height: 1.25;
   letter-spacing: 0.03em;
   margin-right: 12px;
+
+  @media screen and (min-width: 480px) {
+   width: 100%;
+  }
+  @media screen and (min-width: 1200px) {
+	width: 358px;
+}
 }
 
 .footer-form__submit {
