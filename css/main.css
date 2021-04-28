@@ -988,6 +988,13 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .section.merits {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .business {
   padding-top: 0;
 }

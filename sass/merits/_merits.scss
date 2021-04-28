@@ -71,3 +71,10 @@
     margin-left: 0;
   }
 }
+
+.section.merits{
+	@media screen and (min-width: 768px) {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+}
