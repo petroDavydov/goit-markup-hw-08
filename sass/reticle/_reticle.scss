@@ -74,8 +74,6 @@
 
   @media screen and (min-width: 1200px) {
     @include count(3);
-    // flex-basis: calc((100% - 3 * 30px) / 3);
-    margin-left: -10px;
-    margin-right: 20px;
+    margin-left: 30px;
   }
 }
