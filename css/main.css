@@ -950,6 +950,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .merits-list__trait {
+    text-align: start;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .merits-list__trait {
     text-align: start;
@@ -1040,8 +1046,26 @@ img {
   color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .section.team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .team {
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 480px) {
+  .team-title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 480px) {

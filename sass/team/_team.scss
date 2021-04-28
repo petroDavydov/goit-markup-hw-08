@@ -1,5 +1,24 @@
+.section.team{
+	@media screen and (min-width: 768px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+}
+}
+
+
 .team {
   background-color: $btn-bg-color;
+}
+
+.team-title {
+  @media screen and (min-width: 480px) {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
+    text-align: center;
+  }
 }
 
 .team-list {
