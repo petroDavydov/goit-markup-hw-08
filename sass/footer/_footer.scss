@@ -39,8 +39,8 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background: $background-slogan;
-  @media screen and (min-width:1200px) {
-	padding-bottom: 0px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 0px;
   }
 }
 
@@ -91,7 +91,6 @@
 }
 
 .footer-form__input {
-
   border: 1px solid $footer-form-bg-color;
   color: $footer-form-color;
   background-color: $background-slogan;
@@ -102,11 +101,11 @@
   margin-right: 12px;
 
   @media screen and (min-width: 480px) {
-   width: 100%;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
-	width: 358px;
-}
+    width: 358px;
+  }
 }
 
 .footer-form__submit {
@@ -218,13 +217,12 @@
     text-align: center;
   }
 
-//   @media screen and (min-width: 768px) {
+  //   @media screen and (min-width: 768px) {
 
-//   }
+  //   }
 
   @media screen and (min-width: 1200px) {
-	text-align: start;
-
+    text-align: start;
   }
 }
 

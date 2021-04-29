@@ -1,16 +1,9 @@
-.section.merits {
-  @media screen and (min-width: 768px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-}
-
 .merits-list {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    margin-right: -30px;
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -40,12 +33,6 @@
   letter-spacing: 0.03em;
   color: $paragraph-color;
 
-  @media screen and (min-width: 480px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
-
   @media screen and (min-width: 1200px) {
     max-width: 270px;
   }
@@ -59,12 +46,6 @@
   background-color: $icon-merits-color;
   margin-bottom: 30px;
   border-radius: 4px;
-
-  @media screen and (min-width: 480px) {
-  }
-
-  @media screen and (min-width: 768px) {
-  }
 
   @media screen and (min-width: 1200px) {
     width: 270px;
@@ -80,5 +61,11 @@
 @media screen and (min-width: 480px) {
   .merits-list > .merits-list__item {
     margin-left: 0;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .merits-list > .merits-list__item {
+    margin-left: 30px;
   }
 }

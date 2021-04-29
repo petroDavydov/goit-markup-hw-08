@@ -120,8 +120,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  @media screen and (min-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 // end defaults style
@@ -164,7 +170,6 @@ img {
 @mixin count($num) {
   flex-basis: calc(100% / #{$num} - #{$card-set-gap});
 }
-
 
 // $exp: "instagram","twitter","facebook", "linkedin";
 

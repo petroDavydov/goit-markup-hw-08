@@ -88,3 +88,9 @@
     margin-top: -30px;
   }
 }
+
+.portfolio-list__image {
+  @media screen and (min-width: 767px) {
+    max-width: 100%;
+  }
+}
